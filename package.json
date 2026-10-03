@@ -1,1 +1,25 @@
-{"name":"ccdata-yf-06-type-pairer","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite","build":"tsc -b && vite build","preview":"vite preview"},"dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","typescript":"latest","react":"latest","react-dom":"latest","lucide-react":"latest"},"devDependencies":{"@types/react":"latest","@types/react-dom":"latest"}}
+{
+  "name": "ccdata-yf-06-type-pairer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "tsc -p tsconfig.test.json && echo '{\"type\":\"commonjs\"}' > .test-build/package.json && node --test .test-build/core/__tests__/"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
+  }
+}
